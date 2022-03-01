@@ -1,0 +1,175 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:tahoma;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+.logo-box img{
+    width: 80px;
+    height: 25px;
+}
+
+.cart img{
+    width: 80px;
+    height: 25px;
+}
+
+.header{
+    padding:40px 0px;
+    width: 90%;
+    margin:auto;
+    display:flex;
+}
+
+.logo-box{
+    flex:1;
+    display:flex;
+}
+
+.nave{
+    flex:2;
+}
+
+.cart{
+    flex:1;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.nave-links{
+     display:flex;
+    justify-content: space-around;
+}
+
+.nave-link a{
+    color:#5f5f79;
+    font-size: 18px;
+}
+
+.logo-box h4{
+    font-size: 18px;
+    color:#5f5f79;
+}
+
+.presentation{
+    display:flex;
+    flex-direction: row;
+    width: 90%;
+    margin:auto;
+    align-items: center;
+}
+
+.introduction{
+    flex:1;
+}
+
+.cover{
+    flex:1;
+}
+
+.into-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    color:gray;
+}
+
+.into-text p{
+    color:gray;
+    margin:20px 0px;
+}
+
+.cta{
+   padding-top:10px;
+}
+
+.sellect 
+{
+    border:1px solid blue;
+    width:150px;
+    height:50px;
+    background-color:transparent;
+    color:blue;
+    font-size:18px;
+    transition:.5s;
+}
+.add 
+{
+    border:1px solid blue;
+    width:150px;
+    height:50px;
+    background-color:blue;
+    color:#fff;
+    font-size:18px;
+    transition:.5s;
+}
+
+.sellect:hover{
+    background-color: blue;
+    color:#FFF;
+}
+.add:hover{
+    background-color: transparent;
+    color:blue;
+}
+
+.cover img{
+    width: 500px;
+    height: 400px;
+    filter:drop-shadow(0px 5px 3px #000);
+    animation:drop 1.5s;
+}
+
+.c-1{
+    position: absolute;
+    top: -40px;
+    right: 0px;
+    z-index: -1;
+    width: 600px;
+    height: 600px;
+    opacity: .5;
+}
+
+
+.c-2{
+    position: absolute;
+    bottom: -50px;
+    left:-40px;
+    z-index: -1;
+    width: 800px;
+    height: 700px;
+    opacity: .5;
+    rotate: 180deg;
+}
+
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media only screen and (max-width:905px){
+    .presentation{
+        flex-direction: column !important;
+        
+    }
+
+    .introduction{
+        text-align: center;
+    }
+}
